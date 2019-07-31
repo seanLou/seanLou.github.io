@@ -1,2 +1,2 @@
-# qq88.github.io
-QQ爸爸的博客
+# seanLou.github.io
+苏钰简的技术博客
