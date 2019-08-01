@@ -5,7 +5,7 @@
     <link>https://seanlou.github.io/</link>
     <description>Recent content on SeanLou的技术博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Thu, 01 Aug 2019 00:11:30 +0800</lastBuildDate>
     
 	<atom:link href="https://seanlou.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -18,6 +18,15 @@
       
       <guid>https://seanlou.github.io/post/first/</guid>
       <description>第一篇博客</description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>https://seanlou.github.io/about/</link>
+      <pubDate>Wed, 31 Jul 2019 23:54:46 +0800</pubDate>
+      
+      <guid>https://seanlou.github.io/about/</guid>
+      <description>楼关杨 louguanyang@gmail.com</description>
     </item>
     
   </channel>
