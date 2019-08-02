@@ -29,5 +29,14 @@
       <description>这是在GitHub上的第一篇博客。</description>
     </item>
     
+    <item>
+      <title>关于我</title>
+      <link>https://seanlou.github.io/post/about/</link>
+      <pubDate>Sun, 31 Jul 2016 23:54:46 +0800</pubDate>
+      
+      <guid>https://seanlou.github.io/post/about/</guid>
+      <description>Hi，你好，欢迎来到我的博客，我是楼关杨，很高兴认识你。 我是一名Java开发工程师，目前就职于杭州随地付网络技术有限公司，担任技术经理（开发</description>
+    </item>
+    
   </channel>
 </rss>
