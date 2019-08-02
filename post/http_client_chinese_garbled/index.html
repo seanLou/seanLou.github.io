@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.56.3" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>关于HttpClient上传中文乱码的解决办法 &middot; SeanLou的技术博客</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://seanlou.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://seanlou.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://seanlou.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://seanlou.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://seanlou.github.io/"><h1>SeanLou的技术博客</h1></a>
+      <p class="lead">
+       小楼同学的编程随笔 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://seanlou.github.io/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>关于HttpClient上传中文乱码的解决办法</h1>
+  <time datetime=2016-09-26T23:54:45&#43;0800 class="post-date">Mon, Sep 26, 2016</time>
+  <p>使用过HttpClient的人都知道可以通过addTextBody方法来添加要上传的文本信息。但是，如果要上传中文的话，或含有中文名称的文件会出现乱码的问题。解决办法其实很简单:</p>
+
+<p>第一步：设置MultipartEntityBuilder的编码方式为UTF-8</p>
+
+<pre><code class="language-java">builder.setCharset(Charset.forName(HTTP.UTF_8));
+</code></pre>
+
+<p>第二步：创建ContentType对象，指定UTF-8编码。</p>
+
+<pre><code class="language-java">ContentType contentType = ContentType.create(HTTP.PLAIN_TEXT_TYPE, HTTP.UTF_8);
+</code></pre>
+
+<p>第三步：使用addPart+ StringBody代替addTextBody。</p>
+
+<pre><code class="language-java">StringBody stringBody =  new StringBody(&quot;这是中文&quot;, contentType);
+builder.addPart(&quot;key&quot;, stringBody);
+</code></pre>
+
+</div>
+
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "seanlou" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+
+    
+  </body>
+</html>

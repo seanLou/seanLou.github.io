@@ -6,10 +6,19 @@
     <description>Recent content in Posts on SeanLou的技术博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 01 Aug 2016 00:11:30 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 Sep 2016 23:54:45 +0800</lastBuildDate>
     
 	<atom:link href="https://seanlou.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>关于HttpClient上传中文乱码的解决办法</title>
+      <link>https://seanlou.github.io/post/http_client_chinese_garbled/</link>
+      <pubDate>Mon, 26 Sep 2016 23:54:45 +0800</pubDate>
+      
+      <guid>https://seanlou.github.io/post/http_client_chinese_garbled/</guid>
+      <description>使用过HttpClient的人都知道可以通过addTextBody方法来添加要上传的文本信息。但是，如果要上传中文的话，或含有中文名称的文件</description>
+    </item>
     
     <item>
       <title>第一篇博客</title>
