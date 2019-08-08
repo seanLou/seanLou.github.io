@@ -13,37 +13,37 @@
     
     <item>
       <title>Mysql INSERT INTO IGNORE 语法</title>
-      <link>https://seanlou.github.io/post/mysql_insert_into_ignore/</link>
+      <link>https://seanlou.github.io/2018/06/04/mysql-insert-into-ignore/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://seanlou.github.io/post/mysql_insert_into_ignore/</guid>
+      <guid>https://seanlou.github.io/2018/06/04/mysql-insert-into-ignore/</guid>
       <description>数据不存在则插入，存在则无操作 在 INSERT 语句中使用 IGNORE 关键字实现数据不存在则插入，存在则无操作。它的实现逻辑是，当插入语句出现主键冲突，或者唯一键冲</description>
     </item>
     
     <item>
       <title>关于HttpClient上传中文乱码的解决办法</title>
-      <link>https://seanlou.github.io/post/http_client_chinese_garbled/</link>
+      <link>https://seanlou.github.io/2016/09/26/http-client-chinese-garbled/</link>
       <pubDate>Mon, 26 Sep 2016 23:54:45 +0800</pubDate>
       
-      <guid>https://seanlou.github.io/post/http_client_chinese_garbled/</guid>
+      <guid>https://seanlou.github.io/2016/09/26/http-client-chinese-garbled/</guid>
       <description>使用过HttpClient的人都知道可以通过addTextBody方法来添加要上传的文本信息。但是，如果要上传中文的话，或含有中文名称的文件</description>
     </item>
     
     <item>
       <title>第一篇博客</title>
-      <link>https://seanlou.github.io/post/first/</link>
+      <link>https://seanlou.github.io/2016/08/01/first/</link>
       <pubDate>Mon, 01 Aug 2016 00:11:30 +0800</pubDate>
       
-      <guid>https://seanlou.github.io/post/first/</guid>
+      <guid>https://seanlou.github.io/2016/08/01/first/</guid>
       <description>这是在GitHub上的第一篇博客。</description>
     </item>
     
     <item>
       <title>关于我</title>
-      <link>https://seanlou.github.io/post/about/</link>
+      <link>https://seanlou.github.io/2016/07/31/about/</link>
       <pubDate>Sun, 31 Jul 2016 23:54:46 +0800</pubDate>
       
-      <guid>https://seanlou.github.io/post/about/</guid>
+      <guid>https://seanlou.github.io/2016/07/31/about/</guid>
       <description>Hi，你好，欢迎来到我的博客，我是楼关杨，很高兴认识你。 我是一名Java开发工程师，目前就职于杭州随地付网络技术有限公司，担任技术经理（开发</description>
     </item>
     
