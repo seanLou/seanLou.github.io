@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>base64 on 楼关杨的技术博客</title>
+    <link>https://seanlou.github.io/tags/base64/</link>
+    <description>Recent content in base64 on 楼关杨的技术博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 17 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://seanlou.github.io/tags/base64/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用Base64命令绕过服务器文件上传</title>
+      <link>https://seanlou.github.io/post/2019-08-17-use-base64-upload-file/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://seanlou.github.io/post/2019-08-17-use-base64-upload-file/</guid>
+      <description>有的服务器不允许直接上传文件，可以使用base64命令来绕过。 本方法适合一些比较小的文件 在本地先转换要上传的文件为base64, 再保存为re</description>
+    </item>
+    
+  </channel>
+</rss>
